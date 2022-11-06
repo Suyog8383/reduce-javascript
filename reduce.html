@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  let shopCart = [
+    {
+      product: "phone",
+      qty: 1,
+      price: 500,
+    },
+    {
+      product: "Screen Protector",
+      qty: 1,
+      price: 10,
+    },
+    {
+      product: "Memory Card",
+      qty: 15,
+      price: 20,
+    },
+  ];
+
+  // let total = shopCart.reduce((a, b) => {
+  //   console.log("@SN ", a + b.qty * b.price);
+  //   return a + b.qty * b.price;
+  // }, 0);
+  // console.log("@SN ", total);
+
+  let totQuan = shopCart.reduce((preval, currentval) => {
+    return preval + currentval.qty;
+  }, 0);
+
+  console.log("@SN ", totQuan);
+  //   let arr1 = [10, 2];
+  //   let sub = arr1.reduce((a, b) => {
+  //     return b - a;
+  //   }, 0);
+  //   console.log("@SN div by 2=", sub);
+
+  //   let arr = [1, 2, 3, 4, 5, 6];
+  //   let sum = arr.reduce((a, b) => {
+  //     return a + b;
+  //   }, 0);
+  //   console.log("@SN sum=", sum);
+
+  //   let obj = {
+  //     a: true,
+  //     e: true,
+  //     i: true,
+  //     o: true,
+  //     u: true,
+  //   };
+
+  //   let name = "suyognagawade";
+  //   let vowels = name.split("").reduce((a, b) => {
+  //     if (obj.hasOwnProperty(b)) {
+  //       const currentCount = a[b] || 0;
+  //       a[b] = currentCount + 1;
+  //     }
+  //     return a;
+  //   }, {});
+  //   console.log("@SN vowels=", vowels);
+
+  //   let uName = "suyog";
+  //   let reverse = uName.split("").reduce((a, b) => {
+  //     //console.log("@SN ", a, b);
+  //     return b + a;
+  //   }, "");
+  //   console.log("@SN reverse=", reverse);
+</script>
